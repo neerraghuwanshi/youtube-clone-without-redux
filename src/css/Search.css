@@ -1,0 +1,15 @@
+.container{
+    display:grid;
+    grid-template-columns: 3.4fr 1fr;
+    padding:10px;
+}
+
+
+iframe{
+    width:100%;
+    height:70%;
+}
+
+img{
+    margin: auto 10px;
+}
