@@ -1,10 +1,13 @@
 import React from 'react'
 import '../css/Search.css'
+import VideoContainer from './VideoContainer'
 
 class Search extends React.Component{
  
     render(){
-        return(<div>Search</div>)
+        return(
+            <VideoContainer query={'searchTerm'}/>    
+        )
     }
 } 
 

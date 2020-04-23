@@ -1,1 +1,0 @@
-export const initialState = { pending:false, data:[], error:null}

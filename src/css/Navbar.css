@@ -1,35 +1,30 @@
 .maindiv{
-    padding: 10px;
-    display: grid;
-    background-color: black;
-    grid-template-columns: 1fr 1fr .5fr 4fr 1fr 1fr .25fr 1fr;
+    display: flex;
+    background-color: white;
+    padding:16px;
+    justify-content: space-between;
+    align-items:center;
     width: 100%;
     box-sizing: border-box;
+    height:56px;
+    font-size: large;
 }
 
 .link{
     text-decoration: none;
-    color:whitesmoke;
-    margin:0px;
+    color:black;
+    margin:15px 0px 15px 25px;
+    height:100%;
 }
+
 
 .link:hover{
-    color:grey;
+    color:blue;
 }
 
-.leftalign{
-    text-align: left;
+div > i {
+    cursor: pointer;
 }
-
-.rightalign{
-    text-align: right;
-}
-
-.centeralign{
-    text-align: center;  
-}
-
-
 
 
 

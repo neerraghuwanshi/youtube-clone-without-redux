@@ -1,8 +1,10 @@
 import React from 'react';
+import VideoContainer from './VideoContainer'
 
 class Trending extends React.Component{
+
     render(){
-        return(<div style={{position:'absolute', top:'50px',left:'10px'}}>Trending</div>)
+        return <VideoContainer query={'Trending'}/>
     }
 }
 

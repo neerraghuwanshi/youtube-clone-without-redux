@@ -1,10 +1,15 @@
 import React from 'react';
+import VideoContainer from './VideoContainer';
 
 class Home extends React.Component{
+
     render(){
         return(
-            <div>Home</div>
-        )
+        <div>
+            <VideoContainer query={'legends are made'}/>
+        </div>
+        );
+       
     }
 }
 
