@@ -1,5 +1,5 @@
 import React from 'react'
-import '../css/Search.css'
+import '../css/videoContainer.css'
 import VideoContainer from './VideoContainer'
 
 class Search extends React.Component{

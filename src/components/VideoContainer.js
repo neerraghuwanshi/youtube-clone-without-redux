@@ -1,6 +1,7 @@
 import React from 'react'
 import VideoList from './VideoList'
 import Iframe from './Iframe'
+import '../css/videoContainer.css'
 
 import axios from 'axios';
 
