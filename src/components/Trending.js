@@ -4,7 +4,7 @@ import VideoContainer from './VideoContainer'
 class Trending extends React.Component{
 
     render(){
-        return <VideoContainer query={'Trending'}/>
+        return <VideoContainer query={'whatever it takes'}/>
     }
 }
 

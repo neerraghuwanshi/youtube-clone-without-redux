@@ -3,10 +3,11 @@ import '../css/videoContainer.css'
 import VideoContainer from './VideoContainer'
 
 class Search extends React.Component{
- 
+    
     render(){
-        return(
-            <VideoContainer query={'searchTerm'}/>    
+        return(<div>
+            <VideoContainer query={this.props.location.state.searchTerm}/>  
+            </div>  
         )
     }
 } 

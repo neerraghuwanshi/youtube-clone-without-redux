@@ -15,16 +15,24 @@ class VideoContainer extends React.Component{
             params: {
                 part:'snippet',
                 maxResults:5,
-                key:'AIzaSyCPiOYHaZW38JJPKUJOWt7gt-fcALtzsiM',
+                key:'AIzaSyCHp5gglrp9A6lDz76jyJDLOBeIuRLE1_I',
                 q:searchTerm
             }})
-            this.setState({videos:response.data,
-                selectedVideo:response.data.items[0], shouldRender:true})
-                console.log(response.data)   
+                this.setState({videos:response.data,
+                    selectedVideo:response.data.items[0], shouldRender:true})
+            
+               
         }
         
     componentDidMount(){
         this.fetchVideos(this.props.query)
+    }
+
+    componentDidUpdate(prevProps) {
+        if (prevProps !== this.props){
+            this.fetchVideos(this.props.query)
+        }
+        
     }
         
     onClickHandler = (item) => {
