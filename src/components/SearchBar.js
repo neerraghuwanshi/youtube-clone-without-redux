@@ -8,12 +8,12 @@ class SearchBar extends React.Component{
     render(){
 
         const onSubmitHandler = (event) => {
-            const {searchTerm} = this.state
-            const {history} = this.props;   
             event.preventDefault() 
+            const {searchTerm} = this.state
+            const {history} = this.props; 
+            localStorage.setItem('searchTerm',searchTerm)  
             history.push({
                 pathname:'/search',
-                state:{searchTerm}
             })}
 
         const {searchTerm} = this.state

@@ -13,3 +13,7 @@ iframe{
 img{
     margin: auto 10px;
 }
+
+img:hover{
+    cursor:pointer;
+}

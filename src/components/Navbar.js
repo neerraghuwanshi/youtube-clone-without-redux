@@ -12,7 +12,7 @@ class Navbar extends React.Component {
                         <i className="fas fa-bars"><NavLink className="link" to="/"><i className="fab fa-youtube">YouTube</i></NavLink></i>
                     </div>
                     <div>
-                        <SearchBar handleClick={this.handleClick}/>
+                        <SearchBar/>
                     </div>
                     <div>
                         <NavLink className="link" to="/trending">Trending</NavLink>

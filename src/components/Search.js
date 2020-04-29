@@ -4,11 +4,8 @@ import VideoContainer from './VideoContainer'
 
 class Search extends React.Component{
     
-    render(){
-        return(<div>
-            <VideoContainer query={this.props.location.state.searchTerm}/>  
-            </div>  
-        )
+    render() {
+        return <VideoContainer query={localStorage.getItem('searchTerm')}/>  
     }
 } 
 

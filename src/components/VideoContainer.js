@@ -5,10 +5,9 @@ import '../css/videoContainer.css'
 
 import axios from 'axios';
 
-
 class VideoContainer extends React.Component{
     
-    state = {selectedVideo:{}, videos:{}, shouldRender:false}
+    state = {selectedVideo:{}, videos:{}}
 
     fetchVideos = async (searchTerm) => {
         const response = await axios.get('https://www.googleapis.com//youtube/v3/search',{
@@ -19,9 +18,7 @@ class VideoContainer extends React.Component{
                 q:searchTerm
             }})
                 this.setState({videos:response.data,
-                    selectedVideo:response.data.items[0], shouldRender:true})
-            
-               
+                    selectedVideo:response.data.items[0]})
         }
         
     componentDidMount(){
@@ -40,9 +37,9 @@ class VideoContainer extends React.Component{
     }
 
     render(){
-        const {videos, selectedVideo, shouldRender} = this.state
+        const {videos, selectedVideo} = this.state
 
-        if(shouldRender){
+        if(videos.items){
         return(
             <div>
             <div className={'container'}> 
